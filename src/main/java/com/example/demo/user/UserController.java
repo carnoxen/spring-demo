@@ -15,10 +15,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 
 
+
 @RestController
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @GetMapping
+    public String sayHello() {
+        return "Hello";
+    }
+    
 
     @PostMapping
     public User postMethodName(@RequestBody UserForm userForm) {
