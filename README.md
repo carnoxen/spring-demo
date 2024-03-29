@@ -7,7 +7,7 @@ curl -X POST \
 -d "{ \
  \"username\": \"dddd\", \
  \"password\": \"dfdf\" \
-}" http://??????????/
+}" http://{url}/
 
 #result
 #{
@@ -19,7 +19,7 @@ curl -X POST \
 
 ## Get user
 ```shell
-curl http://??????????/{id}
+curl http://{url}/{id}
 
 #result
 #{
@@ -36,7 +36,7 @@ curl -X PUT \
 -d "{ \
  \"username\": \"dddd\", \
  \"password\": \"dfddddf\" \
-}" http://??????????/{id}
+}" http://{url}/{id}
 
 #result
 #{
@@ -48,7 +48,7 @@ curl -X PUT \
 
 ## Delete user
 ```shell
-curl -X DELETE http://??????????/{id}
+curl -X DELETE http://{url}/{id}
 
 #result: user id {id} deleted
 ```
